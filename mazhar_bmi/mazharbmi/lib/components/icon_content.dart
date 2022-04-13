@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mazharbmi/constants.dart';
+import 'package:bmi_calculator/constants.dart';
 
 class IconContent extends StatelessWidget {
   IconContent({this.icon, this.label});
@@ -14,10 +14,10 @@ class IconContent extends StatelessWidget {
       children: <Widget>[
         Icon(
           icon,
-          size: 60.0,
+          size: 80.0,
         ),
         SizedBox(
-          height: 10.0,
+          height: 15.0,
         ),
         Text(
           label,
