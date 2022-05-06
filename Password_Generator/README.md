@@ -1,11 +1,7 @@
-# Genio
+# password generator
 
 Just a password generator.
 
-
-
-
-
-
-https://user-images.githubusercontent.com/56002552/149204188-3956fa90-3561-4094-a2d5-7196fa80a350.mp4
+![Capture 1](https://user-images.githubusercontent.com/100065908/167205785-b3ec9151-b87a-4a8f-92ab-507584136fe5.JPG)
+![Capture](https://user-images.githubusercontent.com/100065908/167205809-1ee141b0-fee4-4207-b028-3c2c682ea4ae.JPG)
 
