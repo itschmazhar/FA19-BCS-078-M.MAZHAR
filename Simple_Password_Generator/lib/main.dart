@@ -139,14 +139,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ],
         ),
-        decoration: const BoxDecoration(
-            gradient: LinearGradient(
-                //  colors: [Colors.pink, Colors.red, Colors.orange],
-                colors: [
-              Colors.greenAccent,
-              Colors.blue,
-              Colors.blueAccent,
-            ], begin: Alignment.bottomLeft, end: Alignment.topRight)),
+
       ),
     );
   }
