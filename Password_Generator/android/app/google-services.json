@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "539766637728",
+    "firebase_url": "https://lab-mid-password-generator-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "lab-mid-password-generator",
+    "storage_bucket": "lab-mid-password-generator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539766637728:android:29a325b600ce074b91f5c5",
+        "android_client_info": {
+          "package_name": "com.example.password_generator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "539766637728-rer2dmd342kg2fpituju2kl414a1qmiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB50nORSJ6rJYGmls9TjbFutkevWcW0ijE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "539766637728-rer2dmd342kg2fpituju2kl414a1qmiu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
