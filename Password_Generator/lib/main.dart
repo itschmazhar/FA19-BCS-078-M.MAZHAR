@@ -14,9 +14,9 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Welcome',
+      title: 'Password Generator',
       theme: ThemeData(
-        primarySwatch: Colors.purple,
+        primarySwatch: Colors.lightBlue,
       ),
       home: MyHomePage(),
 
