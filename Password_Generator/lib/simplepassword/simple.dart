@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'simple_password_generator.dart';
-import 'package:midlabtaskpocketpassworddairy/homepage.dart';
+import 'package:password_generator/homepage.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
 
@@ -48,12 +48,13 @@ class _simplepassState extends State<simplepass> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.purple,
+        primarySwatch: Colors.lightBlue,
       ),
       home: Scaffold(
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.white,
         appBar: AppBar(
-          title: const Text('Simple Password By Massab'),
+          title: const Text('Simple Password '),
+          centerTitle: true,
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
@@ -88,8 +89,8 @@ class _simplepassState extends State<simplepass> {
                       ),
                       filled: true,
                       fillColor: Colors.grey[300],
-                      labelText: 'Enter Hint',
-                      labelStyle: TextStyle(color: Colors.purple),
+                      labelText: 'Enter Title',
+                      labelStyle: TextStyle(color: Colors.lightBlue),
                     ),
                     keyboardType: TextInputType.text,
                   ),
@@ -115,25 +116,15 @@ class _simplepassState extends State<simplepass> {
 
                       print(passwordHint);
                       print(newPassword);
-                      // double passwordstrength =
-                      //     password.checkPassword(password: newPassword);
-                      // if (passwordstrength < 0.3) {
-                      _color = Colors.red;
+
+                      _color = Colors.lightBlueAccent;
                       isOk = 'Password:';
-                      // } else if (passwordstrength < 0.7) {
-                      //   _color = Colors.blue;
-                      //   isOk = 'This password is Good';
-                      // } else {
-                      //   _color = Colors.green;
-                      //   isOk = 'This passsword is Strong';
-                      // }
-                      // DatabaseReference test = FirebaseDatabase.instance.ref().child("TestingAPP");
-                      // test.set("I'm testing with ID ${newPassword}");
+
 
                       setState(() {});
                     },
                     child: Container(
-                      color: Colors.purple,
+                      color: Colors.lightBlue,
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
@@ -175,8 +166,8 @@ class _simplepassState extends State<simplepass> {
                         insertData(newPassword,passwordHint);
                       },
                       child: Text(
-                        "Store on Cloud",
-                        style: TextStyle(fontSize: 20, color: Colors.purple),
+                        "Store on firebase",
+                        style: TextStyle(fontSize: 20, color: Colors.lightBlue),
                       )
                   ),
                 )

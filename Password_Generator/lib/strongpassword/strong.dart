@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'strong_password_generator.dart';
-import 'package:midlabtaskpocketpassworddairy/homepage.dart';
+import 'package:password_generator/homepage.dart';
 import 'package:firebase_database/firebase_database.dart';
 
 class strongpass extends StatefulWidget {
@@ -43,12 +43,12 @@ class _strongpassState extends State<strongpass> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.purple,
+        primarySwatch: Colors.lightBlue,
       ),
       home: Scaffold(
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.white,
         appBar: AppBar(
-          title: const Text('Strong Password By Massab'),
+          title: const Text('Strong Password'),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
@@ -99,7 +99,7 @@ class _strongpassState extends State<strongpass> {
               height: 20.0,
               width: 250.0,
               child: Divider(
-                color: Colors.purple,
+                color: Colors.lightBlueAccent,
               ),
             ),
             Padding(
@@ -114,7 +114,7 @@ class _strongpassState extends State<strongpass> {
                   filled: true,
                   fillColor: Colors.grey[300],
                   labelText: 'Enter Hint',
-                  labelStyle: TextStyle(color: Colors.purple),
+                  labelStyle: TextStyle(color: Colors.lightBlueAccent),
                 ),
                 keyboardType: TextInputType.text,
               ),
@@ -134,7 +134,7 @@ class _strongpassState extends State<strongpass> {
                   filled: true,
                   fillColor: Colors.grey[300],
                   labelText: 'Enter Length',
-                  labelStyle: TextStyle(color: Colors.purple),
+                  labelStyle: TextStyle(color: Colors.lightBlueAccent),
                 ),
                 keyboardType: TextInputType.number,
               ),
@@ -159,23 +159,15 @@ class _strongpassState extends State<strongpass> {
 
                   print(passwordHint);
                   print(newPassword);
-                  // double passwordstrength =
-                  //     password.checkPassword(password: newPassword);
-                  // if (passwordstrength < 0.3) {
-                     _color = Colors.red;
+
+                     _color = Colors.green;
                     isOk = 'Password:';
-                  // } else if (passwordstrength < 0.7) {
-                  //   _color = Colors.blue;
-                  //   isOk = 'This password is Good';
-                  // } else {
-                  //   _color = Colors.green;
-                  //   isOk = 'This passsword is Strong';
-                  // }
+
 
                   setState(() {});
                 },
                 child: Container(
-                  color: Colors.purple,
+                  color: Colors.lightBlueAccent,
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
@@ -218,7 +210,7 @@ class _strongpassState extends State<strongpass> {
                   },
                   child: Text(
                     "Store on Cloud",
-                    style: TextStyle(fontSize: 20, color: Colors.purple),
+                    style: TextStyle(fontSize: 20, color: Colors.lightBlueAccent),
                   )
               ),
             )

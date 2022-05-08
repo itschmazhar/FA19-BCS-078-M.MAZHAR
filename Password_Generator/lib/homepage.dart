@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:midlabtaskpocketpassworddairy/chooseview.dart';
-import 'drawer.dart';
+import 'package:password_generator/view.dart';
 import 'dart:async';
-import 'bgimage.dart';
+import 'image.dart';
 import 'strongpassword/strong.dart';
 import 'simplepassword/simple.dart';
 
@@ -27,17 +26,17 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: Colors.amber,
+        color: Colors.white,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Image(image: AssetImage('asset/img.png'), height: 300),
-            Text("FA19-BCS-112", style: TextStyle(fontSize: 20)),
+            Image(image: AssetImage('asset/img.png'), height: 400),
+            Text("Loading.....", style: TextStyle(fontSize: 25)),
             SizedBox(
-              height: 10,
+              height: 5,
             ),
-            CircularProgressIndicator(color: Colors.purple,)
+            CircularProgressIndicator(color: Colors.green,)
           ],
         ));
   }
@@ -60,9 +59,10 @@ class _LandingPageState extends State<LandingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.white,
         appBar: AppBar(
-          title: Text("Home"),
+          title: Text("Password Generator"),
+          centerTitle: true,
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
@@ -75,11 +75,11 @@ class _LandingPageState extends State<LandingPage> {
           child: Icon(Icons.home),
         ),
 
-        drawer: MyDrawer(),
+       // drawer: MyDrawer(),
         body: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.all(10.0),
+              padding: const EdgeInsets.all(5.0),
               child: bgImage(),
             ),
             SingleChildScrollView(
@@ -89,18 +89,13 @@ class _LandingPageState extends State<LandingPage> {
                     Form(child: Row(
                       children: [
 
-                        Expanded(
-                           child: Padding(
-                          padding: const EdgeInsets.all(3.0),
-                          child: Container(
-                            height: 50,
-                            width: 150,
-                            child: FlatButton(
-                              color: Colors.purple,
+
+                             FlatButton(
+                              color: Colors.lightBlueAccent,
                               textColor: Colors.white,
                               child: new Text(
-                                "Create Simple Password",
-                                style: TextStyle(fontSize: 25),
+                                "Simple Password",
+                                style: TextStyle(fontSize: 20),
                               ),
                               onPressed: () {
 
@@ -112,9 +107,6 @@ class _LandingPageState extends State<LandingPage> {
 
 
                             ),
-                          ),
-                        ),
-                        ),
 
                       ],
                     ),
@@ -133,18 +125,13 @@ class _LandingPageState extends State<LandingPage> {
                     Form(child: Row(
                       children: [
 
-                        Expanded(
-                          child: Padding(
-                            padding: const EdgeInsets.all(3.0),
-                            child: Container(
-                              height: 50,
-                              width: 150,
-                              child: FlatButton(
-                                color: Colors.purple,
+
+                              FlatButton(
+                                color: Colors.lightBlueAccent,
                                 textColor: Colors.white,
                                 child: new Text(
-                                  "Create Strong Password",
-                                  style: TextStyle(fontSize: 25),
+                                  "ToughPassword",
+                                  style: TextStyle(fontSize: 20),
                                 ),
                                 onPressed: () {
 
@@ -156,9 +143,6 @@ class _LandingPageState extends State<LandingPage> {
 
 
                               ),
-                            ),
-                          ),
-                        ),
 
                       ],
                     ),
@@ -176,18 +160,12 @@ class _LandingPageState extends State<LandingPage> {
                   children: [
                     Form(child: Row(
                       children: [
-                        Expanded(
-                          child: Padding(
-                            padding: const EdgeInsets.all(3.0),
-                            child: Container(
-                              height: 50,
-                              width: 150,
-                              child: FlatButton(
-                                color: Colors.purple,
+                         FlatButton(
+                                color: Colors.lightBlueAccent,
                                 textColor: Colors.white,
                                 child: new Text(
-                                  "View All Passwords",
-                                  style: TextStyle(fontSize: 25),
+                                  "View Passwords",
+                                  style: TextStyle(fontSize: 20),
                                 ),
                                 onPressed: () {
 
@@ -199,9 +177,7 @@ class _LandingPageState extends State<LandingPage> {
 
 
                               ),
-                            ),
-                          ),
-                        ),
+
 
                       ],
                     ),
