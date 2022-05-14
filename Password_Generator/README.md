@@ -23,6 +23,8 @@ c0-4f64-a833-face866f0229.JPG)
 1f6f73826.jpg)
 ![Screenshot_20220514_121845](https://user-images.githubusercontent.com/100065908/168415686-593290ce-ec37-43a0-b2f3-2dd89e4f9688.jpg)
 ![Screenshot_20220514_121858](https://user-images.githubusercontent.com/100065908/168415689-1ede3a17-49f7-49d1-984b-d8686e00212e.jpg)
+![splash screen](https://user-images.githubusercontent.com/100065908/168415786-387eebdb-f9f4-4550-a6ef-cc3263ba1aae.JPG)
+
 
 
 
