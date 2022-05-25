@@ -34,67 +34,45 @@ class _splashscreenState extends State<splashscreen> {
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          SizedBox(
-            height: 10.0,
-            child: Divider(
-              color: Colors.black,
-            ),
-          ),
+
           Text(
-            'Welcome to Project Allcoation App',
+            'Project Allcoation App',
             style: TextStyle(
               fontSize: 30.0,
-              color: Colors.red,
+              color: Colors.lightBlueAccent,
               fontFamily: "Satisfy",
             ),
             textAlign: TextAlign.center,
           ),
-          SizedBox(
-            height: 10.0,
-            child: Divider(
-              color: Colors.black,
-            ),
-          ),
-          SizedBox(
-            height: 20.0,
-          ),
+
+
           CircleAvatar(
-            radius: 87,
-            backgroundColor: Colors.black,
-            child: CircleAvatar(
-              child: Icon(
-                Icons.business,
-                size: 75.0,
-                color: Color(0xFFFFC83E),
-              ),
-              backgroundColor: Colors.white,
-              radius: 82.0,
+            radius:70.0,
+            child: ClipRRect(
+              child: Image.asset('assets/comsats.png'),
+              borderRadius: BorderRadius.circular(50.0),
             ),
           ),
           SizedBox(
             height: 20.0,
           ),
-          SizedBox(
-            height: 10.0,
-            child: Divider(
-              color: Colors.black,
-            ),
-          ),
-          Text(
-            'Group',
+
+
+          Text("Loading.....",
+              textAlign: TextAlign.center,
+
             style: TextStyle(
               fontSize: 30.0,
-              color: Colors.red,
+              color: Colors.green,
               fontFamily: "Satisfy",
             ),
-            textAlign: TextAlign.center,
+
           ),
-          SizedBox(
-            height: 10.0,
-            child: Divider(
-              color: Colors.black,
-            ),
-          ),
+          CircularProgressIndicator(
+            
+            color: Colors.lightBlueAccent,
+          )
+
         ],
       )),
     );
