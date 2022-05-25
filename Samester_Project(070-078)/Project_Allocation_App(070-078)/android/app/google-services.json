@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "640300095817",
+    "project_id": "project-allocation-app-49ffe",
+    "storage_bucket": "project-allocation-app-49ffe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640300095817:android:c8dc6f608dfe15ea14a298",
+        "android_client_info": {
+          "package_name": "com.example.samester_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "640300095817-0jfjgnqbunqqtqhbm71ri5nmbpjg7ked.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-mVcPhonf9ZxlFwJZJCOe-beXaEoqiNc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "640300095817-0jfjgnqbunqqtqhbm71ri5nmbpjg7ked.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
