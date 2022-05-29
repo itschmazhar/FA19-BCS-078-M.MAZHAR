@@ -19,6 +19,148 @@ class admin_page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.lightBlueAccent,
+        child: Row(
+            mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Expanded(
+                child: SizedBox(
+                  height: 50,
+                  child: Material(
+                    type: MaterialType.transparency,
+                    child: InkWell(
+                      onTap: () => {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => HomeScreen()),
+                        )
+                      },
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Icon(
+                            Icons.home,
+                            color: Colors.white,
+                          ),
+                          Text(
+                            'Home',
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Expanded(
+                child: SizedBox(
+                  height: 50,
+                  child: Material(
+                    type: MaterialType.transparency,
+                    child: InkWell(
+                      onTap: () => {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => admin_page())),
+                      },
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Icon(
+                            Icons.person_add,
+                            color: Colors.white,
+                          ),
+                          Text(
+                            'Admin',
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Expanded(
+                child: SizedBox(
+                  height: 50,
+                  child: Material(
+                    type: MaterialType.transparency,
+                    child: InkWell(
+                      onTap: () => {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => admin_page())),
+                      },
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Icon(
+                            Icons.history,
+                            color: Colors.white,
+                          ),
+                          Text(
+                            'History',
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Expanded(
+                child: SizedBox(
+                  height: 50,
+                  child: Material(
+                    type: MaterialType.transparency,
+                    child: InkWell(
+                      onTap: () => {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => contact_us())),
+                      },
+                      child:
+
+                      Column(
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+
+                          Icon(
+
+
+                            Icons.person_outline,
+                            color: Colors.white,
+                          ),
+                          Text(
+                            'Profile',
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ]),
+      ),
       backgroundColor: Colors.white,
       body: _buildBody(context),
 
